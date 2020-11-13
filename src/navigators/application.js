@@ -10,7 +10,7 @@ const ApplicationNavigator = () => {
 
   useEffect(() => {
     const onAuthStateChanged = (user) => {
-      console.log('user: ', user.toJson())
+      console.log('user: ', user)
       setUser(user)
       if (initializing) {
         setInitializing(false)
