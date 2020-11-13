@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664339182812:android:aaf7e171995fac615c3019",
+        "mobilesdk_app_id": "1:664339182812:android:958d5530340a1dfa5c3019",
         "android_client_info": {
           "package_name": "com.belajarrn"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "664339182812-5sfkljp7n4s9lufvggoj5c5ugl2nasq6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.belajarrn",
+            "certificate_hash": "d623423f0ded8af188a14259c57be398473ecbec"
+          }
+        },
         {
           "client_id": "664339182812-ddcrl87qqcif8biigd9ag0a7439bhgkk.apps.googleusercontent.com",
           "client_type": 1,
