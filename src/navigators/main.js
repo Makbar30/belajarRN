@@ -1,18 +1,34 @@
 import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
-import { Home } from '../pages'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import { Academy, Home, Profile, Shop } from '../pages'
+import { CustomTabBar } from '../components'
 
-const Stack = createStackNavigator()
+const Tab = createBottomTabNavigator()
 
 const MainNavigator = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
+    <Tab.Navigator tabBar={(props) => <CustomTabBar {...props} />}>
+      <Tab.Screen
         name="Home"
         component={Home}
         options={{ header: () => null }}
       />
-    </Stack.Navigator>
+      <Tab.Screen
+        name="Shop"
+        component={Shop}
+        options={{ header: () => null }}
+      />
+      <Tab.Screen
+        name="Academy"
+        component={Academy}
+        options={{ header: () => null }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{ header: () => null }}
+      />
+    </Tab.Navigator>
   )
 }
 

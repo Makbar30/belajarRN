@@ -14,8 +14,8 @@ const ApplicationNavigator = () => {
   useEffect(() => {
     const onAuthStateChanged = (user) => {
       if (user) {
-        console.log('user: ', user.toJson())
-        dispatch(AuthActions.authenticate(user.toJson()))
+        console.log('user: ', user)
+        dispatch(AuthActions.authenticate(JSON.stringify(user)))
       }
 
       setUser(user)

@@ -1,4 +1,8 @@
+import Academy from './academy'
 import Home from './home'
 import Login from './login'
 import Onboarding from './onboarding'
-export { Home, Login, Onboarding }
+import Profile from './profile'
+import Shop from './shop'
+
+export { Academy, Home, Login, Onboarding, Profile, Shop }
